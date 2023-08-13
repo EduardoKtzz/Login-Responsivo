@@ -12,17 +12,18 @@
          crossorigin="anonymous"
       />
    </head>
-   <body>
+   <body id="fundo">
       <main>
          <section id="login">
-            <div id="imagem">Foto</div>
+            <div id="imagem"></div>
             <div id="formulario">
-               <h1>Login</h1>
-               <p>
-                  Seja bem vindo(a) novamente. Faça login para acessar sua conta
-                  e fazer configurações do seu ambiente!
-               </p>
-               <form action="login.php" method="post"></form>
+               <h1 class="text-center">Login</h1>
+               <p class="text-center">Seja bem vindo(a) novamente.</p>
+               <form action="login.php" method="post">
+                  <div id="input-box">
+                     <input type="email" id="email" />
+                  </div>
+               </form>
             </div>
          </section>
       </main>
