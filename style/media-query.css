@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+   body {
+      background-image: linear-gradient(#5f2c82, #49a09d);
+   }
+
+   #login {
+      width: 80vw;
+   }
+
+   section#login > div#imagem {
+      float: left;
+      width: 30%;
+      height: 100%;
+      background-position: center;
+   }
+
+   section#login > div#formulario {
+      float: right;
+      width: 65%;
+   }
+}
+
+@media (min-width: 992px) {
+   body {
+      background-image: linear-gradient(#5f2c82, #49a09d);
+   }
+
+   #login {
+      width: 950px;
+   }
+
+   section#login > div#imagem {
+      float: left;
+      width: 50%;
+      height: 100%;
+      background-position: center;
+   }
+
+   section#login > div#formulario {
+      width: 65%;
+   }
+}
