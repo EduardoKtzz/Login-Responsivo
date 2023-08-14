@@ -4,7 +4,7 @@
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
    body {
-      background-image: linear-gradient(#5f2c82, #49a09d);
+      background-image: linear-gradient(#5f2c82);
    }
 
    #login {
@@ -22,11 +22,16 @@
       float: right;
       width: 65%;
    }
+
+   div#formulario > h1 {
+      margin-bottom: 10px;
+      border-top: 2px solid rgb(255, 255, 255);
+   }
 }
 
 @media (min-width: 992px) {
    body {
-      background-image: linear-gradient(#5f2c82, #49a09d);
+      background-image: linear-gradient(#49a09d);
    }
 
    #login {
@@ -34,13 +39,14 @@
    }
 
    section#login > div#imagem {
-      float: left;
+      float: right;
       width: 50%;
       height: 100%;
       background-position: center;
    }
 
    section#login > div#formulario {
-      width: 65%;
+      float: left;
+      width: 50%;
    }
 }

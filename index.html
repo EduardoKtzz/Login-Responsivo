@@ -12,6 +12,10 @@
          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
          crossorigin="anonymous"
       />
+      <link
+         href="https://fonts.googleapis.com/icon?family=Material+Icons"
+         rel="stylesheet"
+      />
    </head>
    <body id="fundo">
       <main>
@@ -20,8 +24,38 @@
             <div id="formulario">
                <h1 class="text-center">Login</h1>
                <p class="text-center">Seja bem vindo(a) novamente.</p>
-               <form action="login.php" method="post">
-                  <div id="input-box"></div>
+               <form action="login.php" method="post" autocomplete="on">
+                  <div id="input-box">
+                     <span class="material-icons orange600">person</span>
+                     <input
+                        type="email"
+                        id="ilogin"
+                        placeholder="Insira seu email"
+                        required
+                        maxlength="30"
+                        autocomplete="email"
+                     />
+                     <label for="ilogin"></label>
+                  </div>
+                  <div id="input-box">
+                     <span class="material-icons orange600">lock</span>
+                     <input
+                        type="password"
+                        id="isenha"
+                        placeholder="Insira sua senha"
+                        required
+                        minlength="8"
+                        maxlength="20"
+                        autocomplete="current-password"
+                     />
+                     <label for="isenha"></label>
+                  </div>
+
+                  <input type="submit" id="botão" value="Entrar" />
+                  <a href="">
+                     Esqueci a senha
+                     <i class="material-icons orange600">mail</i>
+                  </a>
                </form>
             </div>
          </section>
