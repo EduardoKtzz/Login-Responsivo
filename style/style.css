@@ -17,7 +17,7 @@ Lilas: #5f2c82
 }
 
 #fundo {
-   background-color: blueviolet;
+   background: #5f2c82 url(../imagens/pxfuel.jpg);
 }
 
 section {
@@ -31,7 +31,8 @@ section {
    height: 530px;
    border-radius: 20px;
    overflow: hidden;
-   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.822);
+   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.822);
+   background: transparent;
    transition: width 0.3s, height 0.3s;
    transition-timing-function: ease;
 }
@@ -49,12 +50,22 @@ section#login > div#formulario {
    display: block;
 }
 
-#input-box {
+#input-box > input #input-box {
+   background: transparent;
+   border: none;
+   outline: none;
+   font-size: 16px;
+   color: #fff;
+}
+
+#input-box > span {
+   color: rgb(255, 255, 255);
    position: relative;
-   padding: 15px 0 0;
+   top: 5px;
 }
 
 div#formulario > h1 {
+   color: white;
    margin-top: 10px;
    margin-bottom: 5px;
    text-decoration: overline #ff7f50;
@@ -62,25 +73,36 @@ div#formulario > h1 {
 
 div#formulario > p {
    margin-top: 5px;
-   margin-bottom: 5px;
+   margin-bottom: 10px;
+   color: white;
 }
 
 #input-box > #ilogin {
    width: 88%;
    height: 40px;
-   line-height: 100px;
    padding: 5px;
-   margin-bottom: -10px;
-   border-radius: 5px;
+   border-radius: 20px;
+   background: transparent;
+   outline: none;
+   border: 2px solid rgba(247, 244, 244, 0.829);
+   font-size: 16px;
+   margin-bottom: 5px;
 }
 
 #input-box > #isenha {
    width: 88%;
    height: 40px;
-   line-height: 100px;
    padding: 5px;
-   margin-bottom: 20px;
-   border-radius: 5px;
+   border-radius: 20px;
+   background: transparent;
+   outline: none;
+   border: 2px solid rgba(247, 244, 244, 0.829);
+   font-size: 16px;
+   margin-bottom: 30px;
+}
+
+::placeholder {
+   color: white;
 }
 
 form > input[type="submit"] {
@@ -94,7 +116,7 @@ form > input[type="submit"] {
 }
 
 form > input[type="submit"]:hover {
-   background-color: orange;
+   background-color: #ff7f50a4;
    cursor: pointer;
 }
 
